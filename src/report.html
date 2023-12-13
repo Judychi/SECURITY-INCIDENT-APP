@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="/styles/output.css">
     <script src="index.js" defer></script>
 </head>
-<body>
+<body class="bg-red-50 h-fit max-w-full">
     <div class="card">
-    <div class="content w-1/2 h-full">
+    <div class="content w-4/5 m-auto lg:w-1/2">
             <div class="hero w-full h-40">
                 <img src="../public/images/images.jpeg" alt="" class="w-full h-full">
             </div>
             <div class="h-auto w-full">
-                <form action="" class="bg-red-200 border-2 w-full h-full">
-                    <fieldset cla>
-                        <legend>Personal Details</legend>
+                <form action="" class="bg-red-200 w-full h-full p-2">
+                    <fieldset class="border-2 border-red-300">
+                        <legend class="ml-7">Personal Details</legend>
                         <p>Your details are private and will not be published</p>
-                        <label for=""></label>
+                        <label for="username" class="w-full">Name</label><input type="text" placeholder="Enter your name" id="username" class="pl-1 placeholder:italic w-full">
+
+                        <label for="useremail" class="w-full">Email</label><input type="text" placeholder="Example@example.com" id="useremail" class="pl-1 placeholder:italic w-full">
                     </fieldset>
                 </form>
             </div>
